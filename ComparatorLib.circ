@@ -76,7 +76,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   </lib>
   <lib desc="file#7400-lib.circ" name="7"/>
   <lib desc="file#logi7400ic.circ" name="8"/>
-  <main name="12BitMagnitudeComparator"/>
+  <main name="11BitMagnitudeComparator"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
     <a name="simlimit" val="1000"/>
@@ -108,9 +108,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <tool lib="1" name="AND Gate"/>
     <tool lib="1" name="OR Gate"/>
   </toolbar>
-  <circuit name="12BitMagnitudeComparator">
-    <a name="circuit" val="12BitMagnitudeComparator"/>
-    <a name="clabel" val="12Comp"/>
+  <circuit name="11BitMagnitudeComparator">
+    <a name="circuit" val="11BitMagnitudeComparator"/>
+    <a name="clabel" val="11Comp"/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="Dialog plain 8"/>
     <wire from="(450,680)" to="(450,750)"/>
@@ -264,53 +264,53 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(420,800)" to="(490,800)"/>
     <wire from="(660,450)" to="(660,760)"/>
     <wire from="(400,950)" to="(600,950)"/>
+    <comp lib="0" loc="(420,180)" name="Ground">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(180,960)" name="Ground"/>
+    <comp lib="0" loc="(900,290)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Switch"/>
+    </comp>
     <comp lib="0" loc="(910,900)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="A&gt;B"/>
     </comp>
-    <comp lib="8" loc="(550,570)" name="IC_7485"/>
-    <comp lib="8" loc="(550,790)" name="IC_7485"/>
     <comp lib="0" loc="(440,180)" name="Power"/>
-    <comp lib="8" loc="(550,350)" name="IC_7485"/>
+    <comp lib="7" loc="(840,430)" name="7408"/>
     <comp lib="0" loc="(140,760)" name="Pin">
       <a name="width" val="11"/>
       <a name="tristate" val="false"/>
       <a name="label" val="B"/>
-    </comp>
-    <comp lib="0" loc="(80,120)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="SA"/>
     </comp>
     <comp lib="0" loc="(190,550)" name="Splitter">
       <a name="fanout" val="11"/>
       <a name="incoming" val="11"/>
       <a name="appear" val="center"/>
     </comp>
-    <comp lib="0" loc="(420,180)" name="Ground">
-      <a name="facing" val="north"/>
+    <comp lib="8" loc="(550,570)" name="IC_7485"/>
+    <comp lib="0" loc="(70,450)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="SB"/>
     </comp>
+    <comp lib="0" loc="(80,120)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="SA"/>
+    </comp>
+    <comp lib="8" loc="(550,790)" name="IC_7485"/>
     <comp lib="0" loc="(140,560)" name="Pin">
       <a name="width" val="11"/>
       <a name="tristate" val="false"/>
       <a name="label" val="A"/>
     </comp>
-    <comp lib="0" loc="(180,960)" name="Ground"/>
     <comp lib="7" loc="(230,220)" name="7486"/>
-    <comp lib="0" loc="(70,450)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="SB"/>
-    </comp>
-    <comp lib="7" loc="(840,430)" name="7408"/>
+    <comp lib="8" loc="(550,350)" name="IC_7485"/>
     <comp lib="0" loc="(180,750)" name="Splitter">
       <a name="fanout" val="11"/>
       <a name="incoming" val="11"/>
       <a name="appear" val="center"/>
-    </comp>
-    <comp lib="0" loc="(900,290)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="Switch"/>
     </comp>
   </circuit>
 </project>
