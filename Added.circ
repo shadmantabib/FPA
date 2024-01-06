@@ -291,65 +291,60 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(270,500)" to="(270,550)"/>
     <wire from="(240,580)" to="(240,700)"/>
     <wire from="(380,250)" to="(580,250)"/>
-    <comp lib="12" loc="(180,330)" name="InputProcess"/>
-    <comp lib="0" loc="(240,700)" name="Ground"/>
-    <comp lib="10" loc="(810,230)" name="32Adder"/>
-    <comp lib="9" loc="(1080,360)" name="74157"/>
-    <comp lib="0" loc="(1190,270)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="Cout"/>
-    </comp>
-    <comp lib="0" loc="(1170,90)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="SB"/>
-    </comp>
-    <comp lib="10" loc="(920,200)" name="2Compl32"/>
-    <comp lib="11" loc="(1050,190)" name="32Mux2X1"/>
-    <comp lib="0" loc="(1140,190)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="32"/>
-      <a name="label" val="to_normalize"/>
-    </comp>
-    <comp lib="12" loc="(630,680)" name="32Is0"/>
-    <comp lib="8" loc="(490,270)" name="RigthShiftWithEmpty"/>
+    <comp lib="11" loc="(720,270)" name="32Mux2X1"/>
     <comp lib="0" loc="(1140,440)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="11"/>
       <a name="label" val="Exp_Large"/>
     </comp>
-    <comp lib="0" loc="(130,340)" name="Pin">
-      <a name="width" val="32"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="B"/>
+    <comp lib="0" loc="(1180,520)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="SAxorSB"/>
     </comp>
+    <comp lib="0" loc="(1190,320)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Sign_bit"/>
+    </comp>
+    <comp lib="10" loc="(920,200)" name="2Compl32"/>
+    <comp lib="0" loc="(1140,190)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
+      <a name="label" val="to_normalize"/>
+    </comp>
+    <comp lib="10" loc="(620,330)" name="2Compl32"/>
+    <comp lib="12" loc="(180,210)" name="InputProcess"/>
     <comp lib="9" loc="(340,440)" name="7486"/>
-    <comp lib="11" loc="(720,270)" name="32Mux2X1"/>
-    <comp lib="7" loc="(380,240)" name="InputHandle"/>
-    <comp lib="0" loc="(670,10)" name="Power"/>
     <comp lib="0" loc="(660,720)" name="Pin">
       <a name="facing" val="north"/>
       <a name="output" val="true"/>
       <a name="label" val="Flag"/>
       <a name="labelloc" val="south"/>
     </comp>
+    <comp lib="10" loc="(810,230)" name="32Adder"/>
     <comp lib="0" loc="(1170,40)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="SA"/>
     </comp>
-    <comp lib="0" loc="(1180,520)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="SAxorSB"/>
+    <comp lib="9" loc="(430,500)" name="7408">
+      <a name="facing" val="north"/>
     </comp>
     <comp lib="0" loc="(130,220)" name="Pin">
       <a name="width" val="32"/>
       <a name="tristate" val="false"/>
       <a name="label" val="A"/>
+    </comp>
+    <comp lib="12" loc="(630,680)" name="32Is0"/>
+    <comp lib="0" loc="(670,10)" name="Power"/>
+    <comp lib="9" loc="(1080,360)" name="74157"/>
+    <comp lib="0" loc="(1170,90)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="SB"/>
     </comp>
     <comp lib="0" loc="(520,720)" name="Pin">
       <a name="facing" val="north"/>
@@ -357,15 +352,20 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="A&gt;B"/>
       <a name="labelloc" val="south"/>
     </comp>
-    <comp lib="9" loc="(430,500)" name="7408">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="10" loc="(620,330)" name="2Compl32"/>
-    <comp lib="12" loc="(180,210)" name="InputProcess"/>
-    <comp lib="0" loc="(1190,320)" name="Pin">
+    <comp lib="11" loc="(1050,190)" name="32Mux2X1"/>
+    <comp lib="0" loc="(1190,270)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="label" val="Sign_bit"/>
+      <a name="label" val="Cout"/>
+    </comp>
+    <comp lib="8" loc="(490,270)" name="RigthShiftWithEmpty"/>
+    <comp lib="7" loc="(380,240)" name="InputHandle"/>
+    <comp lib="0" loc="(240,700)" name="Ground"/>
+    <comp lib="12" loc="(180,330)" name="InputProcess"/>
+    <comp lib="0" loc="(130,340)" name="Pin">
+      <a name="width" val="32"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
     </comp>
   </circuit>
 </project>
